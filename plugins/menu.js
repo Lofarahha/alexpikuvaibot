@@ -41,7 +41,7 @@ System({
         menu += `\n┃  ╰─────────────┈⊷`;
     });
     menu += ` ╰━━━━━━━━━━━┈⊷\n`;
-    menu += `made with 🤍`;
+    menu += `𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 𝛭𝐷 `;
     const url = BOT_INFO.split(';')[2];
     if (isUrl(url)) await message.sendFromUrl(url, { caption: menu, gifPlayback: true });
     else await message.send(menu);
