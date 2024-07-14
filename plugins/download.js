@@ -86,7 +86,7 @@ System({
     let match = await extractUrlFromMessage(text || message.reply_message.text);
     if (!match) return await message.send("*Need a Facebook public media link*\n_Example: .fb ");       
     const response = await getJson(IronMan(`ironman/dl/fb?url=${match}`));
-    await message.client.sendMessage(message.chat, {video: {url: response.ironman[0].url }, caption: "_*Downloaded🤍*_" })
+    await message.client.sendMessage(message.chat, {video: {url: response.ironman[0].url }, caption: "_*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 Downloaded🤍*_" })
 });
 
   
@@ -101,7 +101,7 @@ System({
     if (!isUrl(match)) return await message.reply("_Please provide a valid pinterest *url*");
     if (!match.includes("pin.it")) return await message.reply("_Please provide a valid pinterest *url*");
     const { result } = await getJson(config.API + "download/pinterest?link=" + await extractUrlFromMessage(match))
-    await message.sendFromUrl(result.LokiXer.url, { caption: "_*downloaded 🤍*_" });
+    await message.sendFromUrl(result.LokiXer.url, { caption: "_*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 downloaded 🤍*_" });
 });
 
 
@@ -117,7 +117,7 @@ System({
    const { result } = await getJson(config.API + "download/insta?url=" + match);
    if (result.length === 0) return await message.send("_No media found for this Instagram URL_");
    for (const video of result) {
-     await message.sendFromUrl(video.download_link, { caption: "_*Download 🤍*_" });
+     await message.sendFromUrl(video.download_link, { caption: "_*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 Download 🤍*_" });
     }
 });
 
@@ -134,7 +134,7 @@ System({
     if (!result) return await message.send("Not Found");
     if (result.length === 1) return await message.sendFromUrl(result[0]);
     const options = result.map((u, index) => ({ name: "quick_reply", display_text: `${index + 1}/${result.length}`, id: `story dl-url ${u}` }));
-    return await message.send(options, { body: "", footer: "*JARVIS-MD*", title: "*Insta Media Downloader_*\n" }, "button");
+    return await message.send(options, { body: "", footer: "*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈*", title: "*Insta Media Downloader_*\n" }, "button");
   }
   const url = await extractUrlFromMessage(match);
   if (!isInstaUrl(url)) return message.reply("_*Provide a valid Instagram story URL*_");
@@ -142,7 +142,7 @@ System({
   if (!result) return await message.send("Not Found");
   if (result.length === 1) return await message.sendFromUrl(result[0].download_link);
   const options = result.map((u, index) => ({ name: "quick_reply", display_text: `${index + 1}/${result.length}`, id: `story dl-url ${u.download_link}` }));
-  await message.send(options, { body: "", footer: "*JARVIS-MD*", title: "*Insta Media Downloader_*\n" }, "button");
+  await message.send(options, { body: "", footer: "*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈*", title: "*Insta Media Downloader_*\n" }, "button");
 });
 
 System({
@@ -153,9 +153,9 @@ System({
 }, async (message, match) => {
   const link = await extractUrlFromMessage(match || message.reply_message.text);
   if (!link || !link.includes('soundcloud')) return await message.send("*Need a SoundCloud link to download*\n_Example: .soundcloud https://m.soundcloud.com/corpse_husband/life-waster_");
-    const response = await getJson(IronMan(`ironman/soundcloud/download?link=${link}`));
+    const response = await getJson(alexpikuvaibot(`alexpikuvaibot/soundcloud/download?link=${link}`));
     const q = await message.send(`*Downloading ${response.title}*`);
-    const url = IronMan(`ironman/scdl?url=${link}`);
+    const url = alexpikuvaibot(`alexpikuvaibot/scdl?url=${link}`);
     const aud = await getBuffer(url);
     const img = await getBuffer(response.thumb);
     const result = await toAudio(aud, 'mp3');
@@ -165,7 +165,7 @@ System({
       contextInfo: {
         externalAdReply: {
           title: response.title,
-          body: 'ᴊᴀʀᴠɪꜱ-ᴍᴅ',
+          body: '𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈',
           thumbnail: img,
           mediaType: 1,
           mediaUrl: url,
@@ -185,7 +185,7 @@ System({
     type: 'download',
 }, async (message, match) => {
     if (!match) return await message.send("*Need a query to search for live wallpapers*\n_Example: .livewp furina_");           
-    const data = await getJson(IronMan(`Ironman/live/wallpaper?query=${match}`));
+    const data = await getJson(alexpikuvaibot(`alexpikuvaibot/live/wallpaper?query=${match}`));
     const { Title, Preview_url, Mobile, Desktop } = data;
     await message.client.sendMessage(message.chat, { video: { url: Preview_url }, caption: `*${Title}*` });
     await new Promise(resolve => setTimeout(resolve, 2000));
@@ -231,12 +231,12 @@ System({
     const media = await getJson(IronMan(`ironman/dl/threads?url=${encodedUrl}`));
     if (media.video) {
         for (const videoUrl of media.video) {
-            await message.client.sendMessage(message.chat, { video: { url: videoUrl }, caption: "*Download🤍*" });
+            await message.client.sendMessage(message.chat, { video: { url: videoUrl }, caption: "*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 Download🤍*" });
         }
     }
     if (media.image) {
         for (const imageUrl of media.image) {
-            await message.client.sendMessage(message.chat, { image: { url: imageUrl }, caption: "*Download🤍*" });
+            await message.client.sendMessage(message.chat, { image: { url: imageUrl }, caption: "*𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 Download🤍*" });
         }
     }
 });
@@ -264,7 +264,7 @@ System({
        if (!isUrl(match)) return message.reply("*Reply to Tiktok url or provide a Tiktok url*");
        if (!match || !match.includes("tiktok")) return message.reply("*Reply to tiktok url or provide a tiktok url*");   
        const { result } = await getJson(IronMan("ironman/dl/v2/tiktok?url=" + match), { headers: { 'ApiKey': 'IRON-M4N' } });
-       await message.reply({ url:result.video }, { caption: "*_download🤍_*"}, "video");
+       await message.reply({ url:result.video }, { caption: "*_𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 download🤍_*"}, "video");
 });
 
 System({
@@ -295,7 +295,7 @@ System({
           thumbnail: img,
           mediaType: 1,
           mediaUrl: '',
-          sourceUrl: 'https://github.com/Loki-Xer/Jarvis-md',
+          sourceUrl: 'https://github.com/Piku090909/alexpikuvaibot',
           showAdAttribution: true,
           renderLargerThumbnail: true
         }
