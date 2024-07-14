@@ -3,13 +3,13 @@ const { getJson, getBuffer, System, isPrivate, sleep } = require("../lib/");
 System({
     pattern: "help",
     fromMe: isPrivate,
-    desc: "jarvis-md support",
+    desc: "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 support",
     type: "support"
 }, async (message) => {
-    const name = 'ɪʀᴏɴ ᴍᴀɴ 🎓', title = "ᴊᴀʀᴠɪꜱ ꜱᴜᴩᴩᴏʀᴛ 🪄", number = '4915252819677', body = "ɪʀᴏɴ ᴍᴀɴ";
-    const image = "https://i.imgur.com/DYuO4eT.jpeg", sourceUrl = 'https://github.com/Loki-Xer/Jarvis-md';
+    const name = '𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈', title = "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 ꜱᴜᴩᴩᴏʀᴛ 🪄", number = '918536881026', body = "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈";
+    const image = "https://i.imgur.com/DYuO4eT.jpeg", sourceUrl = 'https://github.com/Piku090909/Jarvis-md1';
     const logo = await getBuffer(image);
-    const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nORG: powered by Jarvis-md;\nTEL;type=CELL;type=VOICE;waid=${number}:${number}\nEND:VCARD`;
+    const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nORG: powered by 𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;\nTEL;type=CELL;type=VOICE;waid=${number}:${number}\nEND:VCARD`;
     const adon = { title, body, thumbnail: logo, mediaType: 1, mediaUrl: sourceUrl, sourceUrl, showAdAttribution: true, renderLargerThumbnail: false };
     await message.client.sendMessage(message.chat, { contacts: { displayName: name, contacts: [{ vcard }] }, contextInfo: { externalAdReply: adon } }, { quoted: message });
 });
@@ -17,12 +17,12 @@ System({
 System({
     pattern: "allplugin",
     fromMe: isPrivate,
-    desc: "To get all plugin of jarvis-md",
+    desc: "To get all plugin of 𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈",
     type: "support"
 }, async (message) => {
     const allPluginsData = await getJson('https://api.lokiser.xyz/api/jarvis/allplugin');
     const externalPluginsData = await getJson('https://api.lokiser.xyz/api/jarvis/plugin');
-    const image = await getBuffer("https://graph.org/file/30ab5e1e228a9636ce7f5.jpg");
+    const image = await getBuffer("https://telegra.ph/file/9403315158cbab1f395b1.jpg");
     const formatPluginData = (pluginData) => {
         return Object.entries(pluginData).map(([key, value]) => `*${key}:* ${value.url}`).join('\n\n');
     };
