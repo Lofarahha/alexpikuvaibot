@@ -17,7 +17,7 @@ module.exports = {
   AUDIO_DATA: process.env.AUDIO_DATA || '𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;https://f.uguu.se/EsfBAPSR.mp4',
   WARN_COUNT: process.env.WARN_COUNT || '3',
   ALIVE_DATA : process.env.ALIVE_DATA || "_*Hy &sender i am alive now*_\n\n_PLATFORM: &platform_\n_RUNTIME : &runtime_\n\n_. type alive to update your alive message_",
-  SESSION_ID: process.env.SESSION_ID || 'Jarvis_dc0d_6c73_8723_f460_6731_bc18_55c3_d33b',
+  SESSION_ID: process.env.SESSION_ID || 'Jarvis_5980_117b_abdc_eff7_108c_6bd0_98bc_ede2',
   LANG: process.env.LANG || 'EN',
   ELEVENLABS: process.env.ELEVENLABS,
   HANDLERS: process.env.HANDLER  || '!',
