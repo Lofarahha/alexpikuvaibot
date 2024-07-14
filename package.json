@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Piku090909/Jarvis-md1.git"
+        "url": "git+https://github.com/Piku090909/alexpikuvaibot.git"
     },
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
