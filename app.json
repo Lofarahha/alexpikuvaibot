@@ -1,23 +1,23 @@
 {
-    "name": "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈",
+    "name": "alexpikuvaibot",
     "version":"1.0.0",
     "description": "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 𝛭𝐷 Multi Device whatsappbot",
     "logo": "https://f.uguu.se/EsfBAPSR.mp4",
     "keywords": ["whatsapp"],
-    "repository": "https://github.com/Loki-Xer/Jarvis",
-    "website": "https://github.com/Loki-Xer/Jarvis",
+    "repository": "https://github.com/Piku090909/Jarvis-md1",
+    "website": "https://github.com/Piku090909/Jarvis-md1",
     "success_url": "/",
     "stack": "container",
     "env": {
         "BOT_INFO": {
             "description": "botname;ownername;ownernumber;image url",
             "required": true,
-            "value":"ᴊᴀʀᴠɪꜱ;ʟᴏᴋɪ-xᴇʀ;https://i.imgur.com/VIpl3q5.mp4"
+            "value":"𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;https://f.uguu.se/EsfBAPSR.mp4"
         },
         "AUDIO_DATA": {
             "description": "audio package name",
             "required": true,
-            "value":"ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://i.imgur.com/VgxJeCm.jpeg"
+            "value":"𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;https://f.uguu.se/EsfBAPSR.mp4"
         },
         "WARN_COUNT": {
             "description": "warn count",
@@ -27,7 +27,7 @@
         "MEDIA_DATA": {
             "description": "media data that uses in list",
             "required": true,
-            "value":"ʟɪꜱᴛ ᴍᴇɴᴜ;ᴊᴀʀᴠɪꜱ-ᴍᴅ;https://i.imgur.com/ltPPMTh.jpeg"
+            "value":"𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 ᴍᴇɴᴜ;𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 𝛭𝐷;https://f.uguu.se/EsfBAPSR.mp4"
         },
         "HANDLER": {
             "description": "handler for bot. all so can be null or false",
@@ -59,7 +59,7 @@
         "SUDO": {
             "description": "owner number of the bot",
             "required": false,
-            "value":"4915252819677"
+            "value":"918536881026"
         },
         "ALLWAYS_ONLINE": {
             "description": "show bot number last seen as online",
