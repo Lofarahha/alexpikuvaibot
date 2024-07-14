@@ -1,15 +1,15 @@
 {
-    "name": "Jarvis-md",
+    "name": "alexpikuvaibot",
     "version": "1.1.1",
     "description": "A simple WhatsApp Bot Based On WhiskeySockets/Baileys",
     "main": "index.js",
     "scripts": {
-        "start": "pm2 start . --attach --name jarvis",
+        "start": "pm2 start . --attach --name alexpikuvaibot",
         "stop": "pm2 stop jarvis"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Loki-Xer/Jarvis-md.git"
+        "url": "git+https://github.com/Piku090909/Jarvis-md1.git"
     },
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
