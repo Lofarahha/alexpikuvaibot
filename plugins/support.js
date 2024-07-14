@@ -7,7 +7,7 @@ System({
     type: "support"
 }, async (message) => {
     const name = '𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈', title = "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 ꜱᴜᴩᴩᴏʀᴛ 🪄", number = '918536881026', body = "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈";
-    const image = "https://i.imgur.com/DYuO4eT.jpeg", sourceUrl = 'https://github.com/Piku090909/Jarvis-md1';
+    const image = "https://telegra.ph/file/9403315158cbab1f395b1.jpg", sourceUrl = 'https://github.com/Piku090909/alexpikuvaibot';
     const logo = await getBuffer(image);
     const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nORG: powered by 𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;\nTEL;type=CELL;type=VOICE;waid=${number}:${number}\nEND:VCARD`;
     const adon = { title, body, thumbnail: logo, mediaType: 1, mediaUrl: sourceUrl, sourceUrl, showAdAttribution: true, renderLargerThumbnail: false };
