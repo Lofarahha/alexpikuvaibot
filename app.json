@@ -4,13 +4,13 @@
     "description": "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 𝛭𝐷 Multi Device whatsappbot",
     "logo": "https://f.uguu.se/EsfBAPSR.mp4",
     "keywords": ["whatsapp"],
-    "repository": "https://github.com/Piku090909/Jarvis-md1",
-    "website": "https://github.com/Piku090909/Jarvis-md1",
+    "repository": "https://github.com/Piku090909/alexpikuvaibot",
+    "website": "https://github.com/Piku090909/alexpikuvaibot",
     "success_url": "/",
     "stack": "container",
     "env": {
         "BOT_INFO": {
-            "description": "botname;ownername;ownernumber;image url",
+            "description": "botname;ownername;ownernumber;video url",
             "required": true,
             "value":"𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;https://f.uguu.se/EsfBAPSR.mp4"
         },
@@ -54,7 +54,7 @@
         "STICKER_PACKNAME": {
             "description": "sticker package name",
             "required": true,
-            "value":"ʟᴏᴋɪ;ᴊᴀʀᴠɪꜱ"
+            "value":"𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈;𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈 𝛭𝐷"
         },
         "SUDO": {
             "description": "owner number of the bot",
